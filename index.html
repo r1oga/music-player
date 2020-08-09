@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.google.com/s2/favicons?domain=r1oga.now.sh/"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player-container">
+      <div class="img-container"><img src="img/forgiveness.jpg" alt="" /></div>
+      <h2 id="title">Forgiveness</h2>
+      <div class="artist-container">
+        <a target="__blank"><h3 id="artist">Rvdical The Kid</h3></a>
+        <a target="__blank"><i class="fab fa-bandcamp"></i></a>
+      </div>
+      <audio src="music/Rvdical The Kid - Forgiveness.mp3"></audio>
+      <!-- progress -->
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-wrapper">
+          <span id="current-time">0:00</span>
+          <span id="duration"></span>
+        </div>
+      </div>
+      <!-- controls -->
+      <div class="player-controls">
+        <i class="fas fa-backward" id="prev" title="Previous"></i>
+        <i class="fas fa-play main-button" id="play" title="Play"></i>
+        <i class="fas fa-forward" id="next" title="Next"></i>
+      </div>
+    </div>
+    <footer>
+      Made by
+      <a href="https://r1oga.now.sh/" target="_blank">@r1oga</a> |
+      <a target="_blank" href="https://github.com/r1oga/music-player">
+        <i class="fab fa-github"></i>
+      </a>
+    </footer>
+    <!-- Scripts -->
+    <script src="songs.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
